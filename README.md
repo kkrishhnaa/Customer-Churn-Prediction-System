@@ -149,13 +149,13 @@ Machine learning web application to predict telecom customer churn.
 ## 📸 Application Screenshots
 
 ### 🏠 Home Page
-![Home Page](images/home-page.jpeg)
+![Home Page](Images/home-page.jpeg)
 
 ### ✅ Customer Retention Prediction
-![Customer Retention](images/customer-retention.jpeg)
+![Customer Retention](Images/customer-retention.jpeg)
 
 ### ⚠️ Customer Churn Prediction
-![Customer Churn](images/customer-churn.jpeg)
+![Customer Churn](Images/customer-churn.jpeg)
 
 ## 👨‍💻 Developer
 
