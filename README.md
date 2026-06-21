@@ -139,6 +139,13 @@ Customer-Churn-Prediction-System
 
 ---
 
+## Customer Churn Prediction System
+
+🚀 Live View:
+https://customer-churn-prediction-krsna.streamlit.app/
+
+Machine learning web application to predict telecom customer churn.
+
 ## 👨‍💻 Developer
 
 **Krishna Tiwari**
