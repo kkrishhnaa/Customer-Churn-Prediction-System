@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Customer Churn Prediction System
 
 A Machine Learning web application that predicts whether a telecom customer is likely to churn.
