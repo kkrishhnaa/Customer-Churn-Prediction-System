@@ -1,88 +1,111 @@
-# 📊 Customer Churn Prediction System
+📊 Customer Churn Prediction System
 
-A Machine Learning web application that predicts whether a telecom customer is likely to churn based on customer demographics, service usage, and billing information.
+"Python" (https://img.shields.io/badge/Python-3.10-blue)
+"Streamlit" (https://img.shields.io/badge/Streamlit-Web_App-red)
+"XGBoost" (https://img.shields.io/badge/XGBoost-ML-green)
+"Scikit-Learn" (https://img.shields.io/badge/Scikit--Learn-ML-orange)
+"License" (https://img.shields.io/badge/License-MIT-yellow)
 
----
-
-## 🚀 Project Overview
-
-Customer churn is one of the biggest challenges for telecom companies. This project analyzes customer behavior and predicts whether a customer is likely to leave the service.
-
-The system provides:
-
-- Customer churn prediction
-- Risk identification
-- Business recommendations
-- Interactive web application
+An end-to-end Machine Learning project that predicts telecom customer churn using customer demographics, service usage, and billing information.
 
 ---
 
-## 🎯 Problem Statement
+🚀 Live Application
 
-Telecom companies lose significant revenue when customers discontinue their services. Identifying high-risk customers helps companies improve retention strategies and reduce churn.
+🔗 https://customer-churn-prediction-krsna.streamlit.app/
 
 ---
 
-## 📂 Dataset
+🎯 Problem Statement
 
-**Dataset:** Telco Customer Churn Dataset
+Customer churn is one of the major challenges faced by telecom companies. Losing customers directly affects revenue and growth.
 
-The dataset contains information such as:
+This project aims to identify customers who are likely to discontinue their services, allowing businesses to take proactive retention measures.
+
+---
+
+📂 Dataset
+
+Dataset: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+
+The dataset contains customer information such as:
 
 - Gender
 - Senior Citizen
-- Partner
-- Dependents
+- Partner & Dependents
 - Tenure
 - Monthly Charges
 - Internet Services
 - Contract Type
 - Payment Method
-- Customer Churn
+- Customer Churn Status
 
 ---
 
-## 🔍 Exploratory Data Analysis
+🔍 Exploratory Data Analysis
 
-EDA was performed to identify patterns and relationships in customer behavior.
+Several exploratory analyses were performed to understand customer behavior.
 
-Key insights:
+Key Insights
 
-- Customers with higher monthly charges churn more frequently.
-- Customers with shorter tenure are more likely to leave.
-- Fiber optic users show higher churn rates.
-- Month-to-month contracts have higher churn.
+- Customers with higher monthly charges tend to churn more.
+- Short-tenure customers have a higher churn rate.
+- Fiber optic users show higher churn.
+- Month-to-month contracts have higher churn probability.
 
 ---
 
-## 🤖 Machine Learning Models
+⚙️ Project Workflow
 
-The following models were evaluated:
+1. Data Collection
+2. Data Cleaning
+3. Feature Engineering
+4. Exploratory Data Analysis
+5. Data Preprocessing
+6. Model Training
+7. Model Evaluation
+8. Model Selection
+9. Streamlit Deployment
 
+---
+
+🤖 Machine Learning Models Evaluated
+
+- Logistic Regression
+- Random Forest
+- Gradient Boosting
 - K-Nearest Neighbors
 - Decision Tree
 - AdaBoost
 - Support Vector Machine
 - XGBoost
 
-### Best Performing Model
+---
+
+📈 Model Performance
+
+Model| Accuracy
+Logistic Regression| 75.6%
+Random Forest| 77.9%
+Gradient Boosting| 79.5%
+KNN| 76.9%
+Decision Tree| 73.4%
+AdaBoost| 78.0%
+XGBoost| 78.6%
+
+Final Selected Model
 
 ✅ XGBoost Classifier
 
----
-
-## 📈 Model Performance
-
-| Metric | Score |
-|-------|--------|
-| Accuracy | 78.6% |
-| Precision | 63.9% |
-| Recall | 50.6% |
-| F1 Score | 56.5% |
+Metric| Score
+Accuracy| 78.6%
+Precision| 63.9%
+Recall| 50.6%
+F1 Score| 56.5%
 
 ---
 
-## 🛠 Technologies Used
+🛠 Tech Stack
 
 - Python
 - Pandas
@@ -95,73 +118,75 @@ The following models were evaluated:
 
 ---
 
-## 💻 Streamlit Application
+💻 Features
 
-The web application allows users to:
-
-- Enter customer details
-- Predict churn risk
-- View business recommendations
+✔ Customer Churn Prediction
+✔ Customer Retention Recommendations
+✔ Interactive Streamlit Interface
+✔ Business-Oriented Insights
+✔ Real-Time Predictions
 
 ---
 
-## 📁 Project Structure
+📸 Application Screenshots
 
-```text
+🏠 Home Page
+
+"Home Page" (Images/home-page.jpeg)
+
+✅ Customer Retention Prediction
+
+"Customer Retention" (Images/customer-retention.jpeg)
+
+⚠️ Customer Churn Prediction
+
+"Customer Churn" (Images/customer-churn.jpeg)
+
+---
+
+📁 Project Structure
+
 Customer-Churn-Prediction-System
 │
+├── Customer_Churn_Prediction.ipynb
 ├── app.py
 ├── churn_model.pkl
 ├── scaler.pkl
 ├── columns.pkl
 ├── requirements.txt
-├── README.md
-```
+├── Images/
+└── README.md
 
 ---
 
-## 📌 Business Recommendations
+📌 Business Recommendations
 
 - Offer retention discounts to high-risk customers.
-- Improve customer support services.
+- Improve customer support quality.
 - Encourage long-term contracts.
 - Provide loyalty rewards.
+- Contact customers proactively.
 
 ---
 
-## 🔮 Future Improvements
+🔮 Future Improvements
 
-- Probability score prediction
-- Advanced dashboard
-- Power BI integration
-- Cloud deployment
+- Churn probability prediction
+- Power BI dashboard integration
 - Customer segmentation
+- Cloud deployment
+- Explainable AI techniques
+- Feature importance visualization
 
 ---
 
-## Customer Churn Prediction System
+👨‍💻 Developer
 
-🚀 Live View:
-https://customer-churn-prediction-krsna.streamlit.app/
+Krishna Tiwari
 
-Machine learning web application to predict telecom customer churn.
+Data Analyst | Python | SQL | Power BI | Machine Learning
 
-## 📸 Application Screenshots
-
-### 🏠 Home Page
-![Home Page](Images/home-page.jpeg)
-
-### ✅ Customer Retention Prediction
-![Customer Retention](Images/customer-retention.jpeg)
-
-### ⚠️ Customer Churn Prediction
-![Customer Churn](Images/customer-churn.jpeg)
-
-## 👨‍💻 Developer
-
-**Krishna Tiwari**
-
-Data Analyst | Python • SQL • Power BI | Building Analytics Solutions & Exploring ML/AI
+LinkedIn: https://www.linkedin.com/in/kriishna
 
 ---
 
