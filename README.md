@@ -14,13 +14,13 @@ An end-to-end Machine Learning project that predicts telecom customer churn usin
 
 ---
 
-🚀 Live Application
+## 🚀 Live Application
 
 🔗 https://customer-churn-prediction-krsna.streamlit.app/
 
 ---
 
-🎯 Problem Statement
+## 🎯 Problem Statement
 
 Customer churn is one of the major challenges faced by telecom companies. Losing customers directly affects revenue and growth.
 
@@ -28,7 +28,7 @@ This project aims to identify customers who are likely to discontinue their serv
 
 ---
 
-📂 Dataset
+## 📂 Dataset
 
 Dataset: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
@@ -46,7 +46,7 @@ The dataset contains:
 
 ---
 
-🔍 Exploratory Data Analysis
+## 🔍 Exploratory Data Analysis
 
 Key insights obtained from the analysis:
 
@@ -57,7 +57,7 @@ Key insights obtained from the analysis:
 
 ---
 
-⚙️ Project Workflow
+## ⚙️ Project Workflow
 
 1. Data Collection
 2. Data Cleaning
@@ -71,7 +71,7 @@ Key insights obtained from the analysis:
 
 ---
 
-🤖 Machine Learning Models Evaluated
+## 🤖 Machine Learning Models Evaluated
 
 - Logistic Regression
 - Random Forest
@@ -84,19 +84,20 @@ Key insights obtained from the analysis:
 
 ---
 
-📈 Model Performance
+## 📊 Model Performance
 
-Final Selected Model: XGBoost
+**Final Selected Model:** XGBoost
 
-Metric| Score
-Accuracy| 78.6%
-Precision| 63.9%
-Recall| 50.6%
-F1 Score| 56.5%
+| Metric | Score |
+|--------|--------|
+| Accuracy | 78.6% |
+| Precision | 63.9% |
+| Recall | 50.6% |
+| F1 Score | 56.5% |
 
 ---
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 - Python
 - Pandas
@@ -109,17 +110,15 @@ F1 Score| 56.5%
 
 ---
 
-✨ Features
+## ✨ Features
 
-✅ Customer Churn Prediction
-✅ Customer Retention Recommendations
-✅ Interactive Streamlit Interface
-✅ Business-Oriented Insights
-✅ Real-Time Predictions
+- ✅ Customer Churn Prediction
+- ✅ Customer Retention Recommendations
+- ✅ Interactive Streamlit Interface
+- ✅ Business-Oriented Insights
+- ✅ Real-Time Predictions
 
 ---
-
-📸 Application Screenshots
 
 ## 📸 Application Screenshots
 
@@ -152,7 +151,7 @@ Customer-Churn-Prediction-System
 └── README.md
 ```
 
-📌 Business Recommendations
+## 📌 Business Recommendations
 
 - Offer retention discounts to high-risk customers.
 - Improve customer support quality.
@@ -162,7 +161,7 @@ Customer-Churn-Prediction-System
 
 ---
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 - Churn probability prediction
 - Power BI dashboard integration
@@ -173,9 +172,9 @@ Customer-Churn-Prediction-System
 
 ---
 
-👨‍💻 Developer
+## 👨‍💻 Developer
 
-Krishna Tiwari
+**Krishna Tiwari**
 
 Data Analyst | Python | SQL | Power BI | Machine Learning
 
