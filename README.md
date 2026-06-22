@@ -1,10 +1,14 @@
-📊 Customer Churn Prediction System
+# 📊 Customer Churn Prediction System
 
-"Python" (https://img.shields.io/badge/Python-3.10-blue)
-"Streamlit" (https://img.shields.io/badge/Streamlit-Web_App-red)
-"XGBoost" (https://img.shields.io/badge/XGBoost-ML-green)
-"Scikit-Learn" (https://img.shields.io/badge/Scikit--Learn-ML-orange)
-"License" (https://img.shields.io/badge/License-MIT-yellow)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+
+![XGBoost](https://img.shields.io/badge/XGBoost-005571?style=flat)
+
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 An end-to-end Machine Learning project that predicts telecom customer churn using customer demographics, service usage, and billing information.
 
@@ -117,22 +121,25 @@ F1 Score| 56.5%
 
 📸 Application Screenshots
 
-🏠 Home Page
+## 📸 Application Screenshots
 
-"Home Page" (Images/home-page.jpeg)
+### 🏠 Home Page
 
-✅ Customer Retention Prediction
+![Home Page](Images/home-page.jpeg)
 
-"Customer Retention" (Images/customer-retention.jpeg)
+### ✅ Customer Retention Prediction
 
-⚠️ Customer Churn Prediction
+![Customer Retention](Images/customer-retention.jpeg)
 
-"Customer Churn" (Images/customer-churn.jpeg)
+### ⚠️ Customer Churn Prediction
+
+![Customer Churn](Images/customer-churn.jpeg)
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 
+```text
 Customer-Churn-Prediction-System
 │
 ├── Customer_Churn_Prediction.ipynb
@@ -143,8 +150,7 @@ Customer-Churn-Prediction-System
 ├── requirements.txt
 ├── Images/
 └── README.md
-
----
+```
 
 📌 Business Recommendations
 
