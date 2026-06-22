@@ -28,7 +28,7 @@ This project aims to identify customers who are likely to discontinue their serv
 
 Dataset: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
-The dataset contains customer information such as:
+The dataset contains:
 
 - Gender
 - Senior Citizen
@@ -44,14 +44,12 @@ The dataset contains customer information such as:
 
 🔍 Exploratory Data Analysis
 
-Several exploratory analyses were performed to understand customer behavior.
-
-Key Insights
+Key insights obtained from the analysis:
 
 - Customers with higher monthly charges tend to churn more.
-- Short-tenure customers have a higher churn rate.
-- Fiber optic users show higher churn.
-- Month-to-month contracts have higher churn probability.
+- Short-tenure customers show higher churn rates.
+- Fiber optic users have higher churn probability.
+- Month-to-month contracts contribute to churn.
 
 ---
 
@@ -84,18 +82,7 @@ Key Insights
 
 📈 Model Performance
 
-Model| Accuracy
-Logistic Regression| 75.6%
-Random Forest| 77.9%
-Gradient Boosting| 79.5%
-KNN| 76.9%
-Decision Tree| 73.4%
-AdaBoost| 78.0%
-XGBoost| 78.6%
-
-Final Selected Model
-
-✅ XGBoost Classifier
+Final Selected Model: XGBoost
 
 Metric| Score
 Accuracy| 78.6%
@@ -118,13 +105,13 @@ F1 Score| 56.5%
 
 ---
 
-💻 Features
+✨ Features
 
-✔ Customer Churn Prediction
-✔ Customer Retention Recommendations
-✔ Interactive Streamlit Interface
-✔ Business-Oriented Insights
-✔ Real-Time Predictions
+✅ Customer Churn Prediction
+✅ Customer Retention Recommendations
+✅ Interactive Streamlit Interface
+✅ Business-Oriented Insights
+✅ Real-Time Predictions
 
 ---
 
