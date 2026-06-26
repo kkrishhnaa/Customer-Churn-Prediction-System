@@ -1,71 +1,66 @@
-# 📊 Customer Churn Prediction System
+# 📉 Customer Churn Prediction System
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=flat)](https://xgboost.readthedocs.io/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
-
-![XGBoost](https://img.shields.io/badge/XGBoost-005571?style=flat)
-
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
-An end-to-end Machine Learning project that predicts telecom customer churn using customer demographics, service usage, and billing information.
+An end-to-end Machine Learning project that predicts telecom customer churn using the IBM Telco Customer Churn dataset — benchmarking 8 classification models and deploying the best-performing model as a live Streamlit web application.
 
 ---
 
 ## 🚀 Live Application
 
-🔗 https://customer-churn-prediction-krsna.streamlit.app/
+🔗 **[customer-churn-prediction-krsna.streamlit.app](https://customer-churn-prediction-krsna.streamlit.app/)**
 
 ---
 
 ## 🎯 Problem Statement
 
-Customer churn is one of the major challenges faced by telecom companies. Losing customers directly affects revenue and growth.
-
-This project aims to identify customers who are likely to discontinue their services, allowing businesses to take proactive retention measures.
+Customer churn is one of the biggest challenges for telecom companies — retaining existing customers is significantly more cost-effective than acquiring new ones. This project builds a predictive pipeline to identify customers likely to leave, enabling businesses to take proactive retention action before revenue is lost.
 
 ---
 
 ## 📂 Dataset
 
-Dataset: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+**Source:** [IBM Telco Customer Churn — Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
-The dataset contains:
+| Detail | Value |
+|--------|-------|
+| Total Records | 7,043 customers |
+| Original Features | 20 |
+| Features After Encoding | 29 |
+| Target Variable | Churn (Yes / No) |
 
-- Gender
-- Senior Citizen
-- Partner & Dependents
-- Tenure
-- Monthly Charges
-- Internet Services
-- Contract Type
-- Payment Method
-- Customer Churn Status
+**Feature categories:**
+- Demographics: Gender, Senior Citizen, Partner, Dependents
+- Services: Phone, Internet, Online Security, Streaming TV/Movies
+- Account Info: Tenure, Contract Type, Payment Method, Monthly Charges
 
 ---
 
 ## 🔍 Exploratory Data Analysis
 
-Key insights obtained from the analysis:
+Key churn drivers identified from the analysis:
 
-- Customers with higher monthly charges tend to churn more.
-- Short-tenure customers show higher churn rates.
-- Fiber optic users have higher churn probability.
-- Month-to-month contracts contribute to churn.
+- 📈 Customers with **higher monthly charges** show significantly higher churn rates
+- ⏱ **Short-tenure customers** (< 12 months) are most at risk of churning
+- 🌐 **Fiber optic** internet users churn more than DSL users
+- 📋 **Month-to-month contracts** are the strongest churn predictor
+- 💳 Customers using **electronic check** payments churn more frequently
 
 ---
 
 ## ⚙️ Project Workflow
 
-1. Data Collection
-2. Data Cleaning
-3. Feature Engineering
-4. Exploratory Data Analysis
-5. Data Preprocessing
-6. Model Training
-7. Model Evaluation
+1. Data Collection & Loading
+2. Data Cleaning & Missing Value Treatment
+3. Feature Engineering & Categorical Encoding
+4. Exploratory Data Analysis (EDA)
+5. Feature Scaling (StandardScaler)
+6. Model Training & Evaluation
+7. Hyperparameter Tuning (GridSearchCV)
 8. Model Selection
 9. Streamlit Deployment
 
@@ -73,113 +68,106 @@ Key insights obtained from the analysis:
 
 ## 🤖 Machine Learning Models Evaluated
 
-- Logistic Regression
-- Random Forest
-- Gradient Boosting
-- K-Nearest Neighbors
-- Decision Tree
-- AdaBoost
-- Support Vector Machine
-- XGBoost
+| Model | Test Accuracy |
+|-------|--------------|
+| Logistic Regression | 75.6% |
+| Random Forest | 78.0% |
+| Gradient Boosting | 79.6% |
+| Decision Tree | 73.5% |
+| AdaBoost | 78.0% |
+| K-Nearest Neighbors | 76.9% |
+| Support Vector Machine | — |
+| **XGBoost (Final)** | **78.6%** |
+
+> GridSearchCV with **5-fold cross-validation** (720 fits) was applied for Gradient Boosting hyperparameter tuning.
 
 ---
 
-## 📊 Model Performance
-
-**Final Selected Model:** XGBoost
+## 📊 Final Model Performance — XGBoost
 
 | Metric | Score |
-|--------|--------|
-| Accuracy | 78.6% |
-| Precision | 63.9% |
-| Recall | 50.6% |
-| F1 Score | 56.5% |
+|--------|-------|
+| Accuracy | **78.6%** |
+| Precision | **63.9%** |
+| Recall | **50.6%** |
+| F1 Score | **56.5%** |
+| ROC-AUC | **0.84** |
 
 ---
 
 ## 🛠 Tech Stack
 
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- XGBoost
-- Streamlit
-- Matplotlib
-- Seaborn
+| Category | Tools |
+|----------|-------|
+| Language | Python |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn, XGBoost |
+| Deployment | Streamlit, Streamlit Cloud |
+| Environment | Jupyter Notebook, Google Colab, VS Code |
 
 ---
 
-## ✨ Features
+## ✨ Application Features
 
-- ✅ Customer Churn Prediction
-- ✅ Customer Retention Recommendations
-- ✅ Interactive Streamlit Interface
-- ✅ Business-Oriented Insights
-- ✅ Real-Time Predictions
+✅ Real-time churn prediction from 8 customer inputs
+✅ Churn risk classification — High Risk / Likely to Stay
+✅ Business-oriented retention recommendations for each prediction
+✅ Clean, interactive Streamlit interface
+✅ XGBoost model served via pickle
 
 ---
 
 ## 📸 Application Screenshots
 
 ### 🏠 Home Page
-
 ![Home Page](Images/home-page.jpeg)
 
 ### ✅ Customer Retention Prediction
-
 ![Customer Retention](Images/customer-retention.jpeg)
 
 ### ⚠️ Customer Churn Prediction
-
 ![Customer Churn](Images/customer-churn.jpeg)
 
 ---
 
 ## 📁 Project Structure
 
-```text
-Customer-Churn-Prediction-System
+```
+Customer-Churn-Prediction-System/
 │
-├── Customer_Churn_Prediction.ipynb
-├── app.py
-├── churn_model.pkl
-├── scaler.pkl
-├── columns.pkl
-├── requirements.txt
-├── Images/
+├── Customer_Churn_Prediction.ipynb   # Full ML pipeline notebook
+├── app.py                            # Streamlit web application
+├── churn_model.pkl                   # Trained XGBoost model
+├── scaler.pkl                        # Fitted StandardScaler
+├── columns.pkl                       # Feature column names
+├── requirements.txt                  # Dependencies
+├── Images/                           # App screenshots
 └── README.md
 ```
 
-## 📌 Business Recommendations
-
-- Offer retention discounts to high-risk customers.
-- Improve customer support quality.
-- Encourage long-term contracts.
-- Provide loyalty rewards.
-- Contact customers proactively.
-
 ---
 
-## 🔮 Future Improvements
+## 📌 Business Recommendations
 
-- Churn probability prediction
-- Power BI dashboard integration
-- Customer segmentation
-- Cloud deployment
-- Explainable AI techniques
-- Feature importance visualization
+Generated by the app for high-risk customers:
+- Offer retention discounts proactively
+- Improve customer support response quality
+- Encourage long-term contract sign-ups
+- Provide loyalty rewards for tenure milestones
+- Flag and contact high-risk accounts before contract renewal
 
 ---
 
 ## 👨‍💻 Developer
 
 **Krishna Tiwari**
+Data Analyst | Python • SQL • Power BI • Machine Learning
 
-Data Analyst | Python | SQL | Power BI | Machine Learning
-
-LinkedIn: https://www.linkedin.com/in/kriishna
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kriishna/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/kkrishhnaa)
+[![Live App](https://img.shields.io/badge/Live_App-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://customer-churn-prediction-krsna.streamlit.app/)
 
 ---
 
-⭐ If you found this project useful, consider giving it a star.
+⭐ *If you found this project useful, consider giving it a star.*
